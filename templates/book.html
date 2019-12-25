@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ book.title }}!
+{% endblock %}
+
+{% block body %}
+    <h1>{{ book.title }}!</h1>
+    <ul>
+        <li>Book ID: {{ book.id }}</li>
+        <li>ISBN: {{ book.isbn }}</li>
+        <li>Title: {{ book.title }}</li>
+        <li>Author: {{ book.author}}</li>
+        <li>Year: {{ book.year}}</li>
+    </ul>
+
+    <h2>Review and Rate this book!</h2>
+    <form action="{{ url_for('book', book_id=book.id) }}" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" name="text" placeholder="Review">
+        </div>
+        <div class="form-group">
+            <select class="form-control" name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Submit</button>
+        </div>        
+    </form>
+
+    <p> {{ message }}</p>
+    
+    <h2> Reviews and Ratings for {{book.title}} </h2>
+    
+    <h4>{{ current_user_review_heading }}</h4>
+    <ul>
+        <li>Review: {{ user_review.text }} Rating: {{ user_review.rating }}</li>
+    </ul>
+
+    <h4>{{ other_users_reviews_heading }}</h4>
+    
+    <ul>
+        {% for review in other_reviews %}
+            <li> User: {{ review.username}} Review: {{ review.text }} Rating: {{ review.rating }} </li>
+        {% endfor %}
+    </ul>
+    
+    <h4>Goodreads Ratings</h4>
+    <ul>
+        <li>Number of ratings: {{goodreads_ratings_count}}</li>
+        <li>Average rating: {{goodreads_average_rating}}</li>
+    </ul>
+
+{% endblock %}
