@@ -23,7 +23,6 @@
         # Check for environment variable
         if not os.getenv("DATABASE_URL"):
             raise RuntimeError("DATABASE_URL is not set") -->
-        
     * Function and routes:
         - index:    /
         - register: /registered
@@ -33,7 +32,7 @@
         - book:     /book/<int:book_id>
    
 
-Plan:
+## Plan:
 1. Create Tables: 
     - users: id, username, password
     - books: id, isbn, title, author, year
