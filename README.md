@@ -45,7 +45,7 @@ key: KJpVcIfDHAmjAZxLIt1hKA
 
 https://www.goodreads.com/search.xml?key=KJpVcIfDHAmjAZxLIt1hKA&q=Ender%27s+Game
 
-### Requirements
+## Requirements
 Alright, it’s time to actually build your web application! Here are the requirements:
 
 - Registration: Users should be able to register for your website, providing (at minimum) a username and password.
