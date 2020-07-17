@@ -44,14 +44,12 @@ Description: basic CRUD web application with user registration, login, book sear
         - logout:   /logout
         - book:     /book/<int:book_id>
    
-# updated till here
-
 
 Plan:
 1. Create Tables: 
-    1.1. users: id, username, password
-    1.2. books: id, isbn, title, author, year
-    1.3. reviews: id, rating, text, user_id, book_id
+    - users: id, username, password
+    - books: id, isbn, title, author, year
+    - reviews: id, rating, text, user_id, book_id
 2. Import books.CSV
 3. Code the server with all interface pages
 
