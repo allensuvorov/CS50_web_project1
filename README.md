@@ -23,7 +23,7 @@
         # Check for environment variable
         if not os.getenv("DATABASE_URL"):
             raise RuntimeError("DATABASE_URL is not set") -->
-    * Function and routes:
+    * Functions and routes:
         - index:    /
         - register: /registered
         - login:    /logged_in
