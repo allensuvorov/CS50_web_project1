@@ -1,10 +1,10 @@
 # Project 1
 
-Course: Web Programming with Python and JavaScript
-Project1: Books
-Link: https://docs.cs50.net/web/2019/x/projects/1/project1.html
-Structure: Web Browser - Server - Database
-Description: basic CRUD web application with user registration, login, book search, review submision, review display, review data from API, and API access.
+- Course: Web Programming with Python and JavaScript
+- Project1: Books
+- Link: https://docs.cs50.net/web/2019/x/projects/1/project1.html
+- Structure: Web Browser - Server - Database
+- Description: basic CRUD web application with user registration, login, book search, review submision, review display, review data from API, and API access.
 
 ## Project Files:
 1. Create.sql
