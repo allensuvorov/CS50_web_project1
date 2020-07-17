@@ -12,22 +12,13 @@
         - On line 7 where create_engine removed "os.getenv("
         - and replaced DATABASE_URL with the URI of the remote DB.
         - added import_counter to monitor the import process
-3. layout.html
-    * the HTML template for other pages
-    * it has a navigation menu, with jinja2 condition
-4. index.html
-    * the home page, where users register or login
-5. search.html
-    * a search form and a jinja2 loop that lists search results
-6. book.html
-    * book data, review submit form, user reviews, other people's reviews, goodreads number of ratings and average rating
-7. success.html
-    * a simple success page with a message
-8. error.html
-    * a simple error page with a message
-9. application.py
-
-    * Removed that part from the original code:
+3. layout.html - the HTML template for other pages. It has a navigation menu, with jinja2 condition.
+4. index.html - the home page, where users register or login.
+5. search.html - a search form and a jinja2 loop that lists search results.
+6. book.html - book data, review submit form, user reviews, other people's reviews, goodreads number of ratings and average rating.
+7. success.html - a simple success page with a message.
+8. error.html - a simple error page with a message.
+9. application.py - Removed that part from the original code:
         <!-- 
         # Check for environment variable
         if not os.getenv("DATABASE_URL"):
