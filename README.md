@@ -19,10 +19,9 @@
 - success.html - a simple success page with a message.
 - error.html - a simple error page with a message.
 - application.py - Removed that part from the original code:
-        <!-- 
-        # Check for environment variable
+        `# Check for environment variable
         if not os.getenv("DATABASE_URL"):
-            raise RuntimeError("DATABASE_URL is not set") -->
+        raise RuntimeError("DATABASE_URL is not set")`
     * Functions and routes:
         - index:    /
         - register: /registered
