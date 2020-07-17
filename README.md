@@ -7,11 +7,8 @@
 - Description: basic CRUD web application with user registration, login, book search, review submision, review display, review data from API, and API access.
 
 ## Project Files:
-1. Create.sql
-    * creates tables (users, books, reviews) by running these Postgres commands. Set data types and restrictions.
-2. import.py
-    * imports books.csv to remote DB on Heroku. 
-    * idjustments of the initially provided code: 
+1. Create.sql - creates tables (users, books, reviews) by running these Postgres commands. Set data types and restrictions.
+2. import.py - imports books.csv to remote DB on Heroku. Adjustments of the initially provided code: 
         - On line 7 where create_engine removed "os.getenv("
         - and replaced DATABASE_URL with the URI of the remote DB.
         - added import_counter to monitor the import process
