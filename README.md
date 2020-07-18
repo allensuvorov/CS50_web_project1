@@ -1,10 +1,10 @@
 # Project1 - "Books" (Python, Flask, SQL, PostgreSQL, Heroku, API)
 
+- Description: basic CRUD web application with user registration, login, book search, review submision, review display, review data from API, and API access.
 - Video overview of the completed project: https://youtu.be/fITOH4iQ7Tg
 - Course: Web Programming with Python and JavaScript
-- Specification: https://docs.cs50.net/web/2019/x/projects/1/project1.html
 - Structure: Web Browser - Server - Database
-- Description: basic CRUD web application with user registration, login, book search, review submision, review display, review data from API, and API access.
+
 
 ## Project Files:
 - Create.sql - creates tables (users, books, reviews) by running these Postgres commands. Set data types and restrictions.
